@@ -1,5 +1,5 @@
 def isPalindrom(word):
-    cleaned = word.lower()
+    cleaned = word.lower().replace(" ", "")
+    cleaned1 = word.lower().replace(".", "")
     return cleaned == cleaned[::-1]
-    cleaned1 = cleaned.replace("_", "")
-print(isPalindrom("l evel"))
+print(isPalindrom("l,evel"))
